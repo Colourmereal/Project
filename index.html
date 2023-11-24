@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation Bar</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="navbar-content">
+      <div class="logo">
+        <img src="./skeen.png" alt="logo"/>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">SHOP</a></li>
+        <li><a href="#">BUNDLES</a></li>
+        <li><a href="#">BLOG</a></li>
+      </ul>
+      <div class="cart">
+        <button>ADD TO CART</button>
+        <img src="./assets/svgs/ShoppingBag.svg" alt="shopping cart icon"/>
+      </div>
+      <!-- Hamburger menu icon for mobile -->
+      <div class="hamburger">
+        <i onclick="toggleNavbar()" class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide-menu">
+    <span class="close">&times;</span>
+    <ul class="slide-menu-links">
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">SHOP</a></li>
+      <li><a href="#">BUNDLES</a></li>
+      <li><a href="#">BLOG</a></li>
+    </ul>
+    <!-- Cart button within the sliding menu -->
+    <div class="cart slide-menu-cart">
+      <button>ADD TO CART</button>
+      <img src="./ShoppingBag.svg" alt="shopping cart icon"/>
+    </div>
+  </div>
+
+  <!-- Input Field Section -->
+  <div class="search-container">
+    <i class="fa fa-search"></i>
+    <input type="text" placeholder="Search.." name="search">
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero-container">
+    <div class="hero-content">
+      <h3>The New</h3>
+      <h1>Skin Care</h1>
+      <svg class="star" xmlns="http://www.w3.org/2000/svg" width="67" height="67" viewBox="0 0 67 67" fill="none">
+        <path d="M31.9526 1.49524C32.2996 -0.185493 34.7004 -0.185493 35.0474 1.49524L40.0491 25.723C40.1766 26.3407 40.6593 26.8234 41.277 26.9509L65.5048 31.9526C67.1855 32.2996 67.1855 34.7004 65.5048 35.0474L41.277 40.0491C40.6593 40.1766 40.1766 40.6593 40.0491 41.277L35.0474 65.5048C34.7004 67.1855 32.2996 67.1855 31.9526 65.5048L26.9509 41.277C26.8234 40.6593 26.3407 40.1766 25.723 40.0491L1.49524 35.0474C-0.185493 34.7004 -0.185493 32.2996 1.49524 31.9526L25.723 26.9509C26.3407 26.8234 26.8234 26.3407 26.9509 25.723L31.9526 1.49524Z" fill="#201E1C"/>
+      </svg>
+      <h3 class="essentials">Essentials</h3>
+      <div class="hero-images">
+        <div class="left">
+          <img src="./left image.png" />
+        </div>
+        <div class="middle">
+          <img src="./hero image.png" />
+        </div>
+        <div class="right">
+          <svg class="star" xmlns="http://www.w3.org/2000/svg" width="67" height="67" viewBox="0 0 67 67" fill="none">
+            <path d="M31.9526 1.49524C32.2996 -0.185493 34.7004 -0.185493 35.0474 1.49524L40.0491 25.723C40.1766 26.3407 40.6593 26.8234 41.277 26.9509L65.5048 31.9526C67.1855 32.2996 67.1855 34.7004 65.5048 35.0474L41.277 40.0491C40.6593 40.1766 40.1766 40.6593 40.0491 41.277L35.0474 65.5048C34.7004 67.1855 32.2996 67.1855 31.9526 65.5048L26.9509 41.277C26.8234 40.6593 26.3407 40.1766 25.723 40.0491L1.49524 35.0474C-0.185493 34.7004 -0.185493 32.2996 1.49524 31.9526L25.723 26.9509C26.3407 26.8234 26.8234 26.3407 26.9509 25.723L31.9526 1.49524Z" fill="#201E1C"/>
+          </svg>
+          <a href="">Watch Reviews</a>
+          <img src="./right image.png" />
+        </div>
+      </div>
+
+      <!-- Creepy Button 👀👀👀 -->
+      <button class="shop-now-button">SHOP NOW</button>
+    </div>
+  </section>
+
+
+  <!-- Hey. Hi. Hello -->
+  <section class="slanted-section">
+    <div class="slanted-content">
+      <h2>Hey. Hi. Hello</h2>
+      <p class="desc">WE'RE SKEEN YOUR SKIN PROTECTOR</p>
+      <div class="arrow-up">
+        <p class="appointment">MAKE APPOINTMENT</p>
+      </div>
+    </div>
+    <div class="flowers-container">
+      <img class="flowers" src="./FLOWERS.png" />
+    </div>
+  </section>
+
+  
+    <!--Best selling products-->
+    <section class="best-container">
+    <div class="best-content">
+    <h1>Best Selling<br>
+       Product<br></h1>
+    <p>YOUR DAILY MORNING COFEE. DEPENDABLE AND INTENTIONAL ESSENTIALS<br>
+      WHEN YOU'RE CRAVING YOUR GO-TO'S FOR HEALTHY SKIN<br></p>
+    </div>
+
+
+    <div class="best-images">
+      <div class="bottle">
+      <img class="bottle" src="/B. SELL 1.png" width="350" height="450"/>
+    </div>
+
+    <div class="serum">
+      <img class="serum" src="/B. SELL 2.png" width="350" height="450"/>
+    </div>
+
+    <div class="frame248">
+      <img class="frame248" src="/Frame 248.jpg" width="450" height="250"/>
+    </div>
+  </div>
+    </section>
+
+  <!--council section-->
+  <section class="council-container">
+    <div class="council-content">
+      <h1>The Council<br>Has Spoken<br></h1>
+      <p>WE ARE HERE TO MAKE DAILY ROUTINES<br>
+         BETTER FOR YOUR BODY AND BETTER FOR OUR<br>
+         PLANET - BECAUSE SMALL CHANGE CAN MAKE<br> 
+         A BIG IMPACT. THROUGH OUR MEMBERSHIP,WE<br>
+         WILL BE SUPPORTING THE SKIN CANCER<br>
+         FOUNDATION'S WORK WHICH PROVIDES THE<br>
+         TOOLS* EDUCATION YOU NEED TO PREVENT. </p>
+
+         <a href="#" class="underline-button">Learn more</a>
+        </div>
+         <img src="/52372620e020a06cd060f1e14a0cdefc 3.jpg" width="350" height="450">
+        </section>
+  
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
